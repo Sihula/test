@@ -1,0 +1,237 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.header__logo{
+  display: none;
+}
+.burger__menu{
+  display: none;
+}
+.header {
+  &__top {
+    display: flex;
+    height: 130px;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(179, 191, 205, 0.12);
+        
+  }
+
+  &__top-info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info-city {
+    margin-right: 56px;
+    padding-left: 24px;
+    color: #B3BFCD;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url(../images/vector.svg);
+      width: 16px;
+      height: 20px;
+      left: 0px;
+      top: 3px;
+    }
+  }
+
+  &__info-phone {
+    padding-left: 48px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 24px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/phone.svg);
+      width: 32px;
+      height: 32px;
+      left: 0px;
+      top: -3px;
+      
+    }
+  }
+
+  &__info-personal {
+    margin: 0 19px 0 56px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    margin-bottom: 80px;
+  }
+
+  &__bottom-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom-menu-link {
+    margin-right: 56px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &__bottom-icons {
+    display: flex;
+  }
+
+  &__bottom-icons-link {
+    &:first-child{
+      margin-right: 23px;
+    }
+    margin-right: 18px;
+  }
+}
+
+.menu {
+  display: flex;
+    align-items: center;
+    margin-left: 160px;
+    
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 32px;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+
+.your-pc {
+  &__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+   border-bottom: 3px solid #D43C38;
+   box-shadow: 0px 4px 0px rgba(212, 60, 56, 0.5);
+   max-width: 354px;
+   width: 100%;
+   margin: 0 auto;
+   padding-bottom: 40px;
+
+  }
+
+  &__subtitle {
+    margin: 24px 0 10px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    margin-bottom: 72px;
+    
+  }
+
+  &__slider {
+    padding-bottom: 161px;
+    
+  }
+
+  &__slider-item {
+    max-width: 427px;
+    width: 100%;
+    background-color: #0C1117;
+   height: 643px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    filter: drop-shadow(0px 0px 20px rgba(212, 60, 56, 0.5));
+    margin: 10px auto;
+    transition: .5s ease;
+    border: 2px solid transparent;
+    &:hover{
+      border: 2px solid #D43C38;
+    }
+  }
+}
+.your-pc-item__imgage{
+  margin-bottom: 19px;
+&::after {
+  content: '';
+  position: absolute;
+  background-image: url(../images/fon.png);
+  width: 379px;
+  height: 357px;
+  top: 8px;
+  left: 25px;
+  z-index: -1;
+}
+}
+.your-pc-item {
+  
+  &__img {
+    padding: 27px 23px 20px 24px;
+       
+  }
+  
+  &__title {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 105.9%;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  
+  &__text {
+    font-size: 14px;
+    line-height: 128.4%;
+    margin-bottom: 37px;
+    padding: 0 17px;
+  }
+  
+  &__more {
+    padding: 25px 80px 24px 27px;
+    border: 1px solid #D43C38;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url(../images/arrow-more.svg);
+      right: 20px;
+      bottom: 32px;
+      height: 7px;
+      width: 37px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.your-pc-info {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+.your-pc-arrow__back{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+}
+
+@import 'media';

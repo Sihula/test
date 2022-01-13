@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+body{
+  font-family: 'Montserrat',
+  sans-serif;
+  font-weight: 400;
+  background-color: #020405;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  transition: all .5s ease;
+  a{
+    color: #fff;
+  }
+}
+.container {
+  max-width: 2270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
